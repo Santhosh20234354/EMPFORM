@@ -10,7 +10,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const response = await axios.get('http://localhost:5656/api/employees');
+        const response = await axios.get('https://backend-2pyq.onrender.com/api/employees');
         setEmployees(response.data);
         setFilteredEmployees(response.data);
       } catch (error) {
