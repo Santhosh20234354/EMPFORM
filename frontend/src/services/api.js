@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5656/api/employees'
+    baseURL: 'https://employeebackend-5di2.onrender.com/api/employees'
 });
 
 export const addEmployee = (data) => api.post('/', data);
